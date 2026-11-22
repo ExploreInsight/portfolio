@@ -44,11 +44,19 @@ export default async function ProjectPage({ params }: Props) {
         <p className="eyebrow">{project.category}</p>
         <h1>{project.name}<span>.</span></h1>
         <p>{project.summary}</p>
-        <a className="button primary" href={project.repository}>View source on GitHub <Arrow /></a>
+        <div className="detail-actions">
+          {project.liveUrl && <a className="button primary" href={project.liveUrl}>Open live app <Arrow /></a>}
+          <a className={`button ${project.liveUrl ? "secondary" : "primary"}`} href={project.repository}>View source on GitHub <Arrow /></a>
+        </div>
       </header>
       {project.cover && (
         <div className={`detail-cover ${project.cover.theme}`}>
           <Image src={project.cover.src} alt={project.cover.alt} width={project.cover.width} height={project.cover.height} priority unoptimized />
+        </div>
+      )}
+      {project.icon && (
+        <div className="detail-icon">
+          <Image src={project.icon} alt={`${project.name} extension icon`} width={128} height={128} unoptimized />
         </div>
       )}
       <div className="detail-content">

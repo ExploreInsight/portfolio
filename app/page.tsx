@@ -93,6 +93,7 @@ export default function HomePage() {
                   <h3><Link href={`/projects/${project.slug}`}>{project.name} <Arrow /></Link></h3>
                   <p>{project.summary}</p>
                   <Tags items={project.stack.slice(0, 3)} />
+                  {project.liveUrl && <a className="text-link card-live" href={project.liveUrl} aria-label={`Open ${project.name} live app`}>Live app <Arrow /></a>}
                 </div>
               </article>
             ))}
@@ -103,10 +104,12 @@ export default function HomePage() {
             <ul>
               {projects.filter((project) => !project.cover).map((project) => (
                 <li key={project.slug}>
-                  <Link href={`/projects/${project.slug}`}>
-                    <span><strong>{project.name}</strong><span>{project.summary}</span></span>
+                  <Link className="more-project-link" href={`/projects/${project.slug}`}>
+                    {project.icon && <Image src={project.icon} alt="" width={36} height={36} className="more-project-icon" />}
+                    <span className="more-project-text"><strong>{project.name}</strong><span>{project.summary}</span></span>
                     <Arrow />
                   </Link>
+                  {project.liveUrl && <a className="text-link" href={project.liveUrl} aria-label={`Open ${project.name} live app`}>Live app <Arrow /></a>}
                 </li>
               ))}
             </ul>

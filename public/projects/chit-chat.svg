@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+    <linearGradient id="primary-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="675" fill="url(#bg-grad)" />
+
+  <!-- Grid decoration lines -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="135" x2="1200" y2="135" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="0" y1="405" x2="1200" y2="405" />
+    <line x1="0" y1="540" x2="1200" y2="540" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+  </g>
+
+  <!-- Top App Bar Mockup -->
+  <g transform="translate(60, 40)">
+    <rect width="1080" height="60" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <!-- App Logo & Title -->
+    <rect x="20" y="14" width="32" height="32" rx="8" fill="#3b82f6" fill-opacity="0.2" />
+    <path d="M28 24h16c1.1 0 2 .9 2 2v6c0 1.1-.9 2-2 2h-4l-4 4v-4h-8c-1.1 0-2-.9-2-2v-6c0-1.1.9-2 2-2z" fill="#3b82f6" />
+    <text x="64" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" fill="#f8fafc">Chit Chat</text>
+    <text x="145" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#10b981">● REALTIME</text>
+
+    <!-- Top Right Theme / Profile pills -->
+    <rect x="850" y="14" width="100" height="32" rx="8" fill="#334155" />
+    <text x="872" y="35" font-family="sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">🎨 30+ Themes</text>
+    <circle cx="985" cy="30" r="14" fill="#3b82f6" />
+    <text x="985" y="35" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">C</text>
+    <rect x="1010" y="14" width="55" height="32" rx="8" fill="#ef4444" fill-opacity="0.15" />
+    <text x="1037" y="35" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">Exit</text>
+  </g>
+
+  <!-- Main Chat Window Card -->
+  <g transform="translate(60, 120)" filter="url(#shadow)">
+    <!-- Main Window Background -->
+    <rect width="1080" height="500" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+
+    <!-- LEFT: Contacts Sidebar (w=320) -->
+    <g>
+      <rect width="320" height="500" rx="16" fill="#1e293b" />
+      <line x1="320" y1="0" x2="320" y2="500" stroke="#334155" stroke-width="1.5" />
+
+      <!-- Sidebar Header -->
+      <text x="24" y="40" font-family="sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Contacts</text>
+      <rect x="230" y="24" width="65" height="22" rx="11" fill="#334155" />
+      <text x="262" y="39" font-family="sans-serif" font-size="11" font-weight="600" fill="#10b981" text-anchor="middle">5 online</text>
+
+      <!-- Search Input -->
+      <rect x="20" y="60" width="280" height="34" rx="8" fill="#0f172a" stroke="#334155" />
+      <text x="35" y="82" font-family="sans-serif" font-size="12" fill="#64748b">🔍 Search contacts...</text>
+
+      <!-- Online Filter Toggle -->
+      <circle cx="30" cy="116" r="6" fill="#3b82f6" />
+      <text x="44" y="120" font-family="sans-serif" font-size="11" font-weight="600" fill="#94a3b8">Show online only</text>
+
+      <!-- Contact Item 1 (Selected) -->
+      <g transform="translate(12, 136)">
+        <rect width="296" height="64" rx="10" fill="#3b82f6" />
+        <circle cx="36" cy="32" r="20" fill="#ffffff" />
+        <text x="36" y="37" font-family="sans-serif" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">E</text>
+        <circle cx="50" cy="46" r="5" fill="#10b981" stroke="#3b82f6" stroke-width="2" />
+        <text x="68" y="28" font-family="sans-serif" font-size="14" font-weight="700" fill="#ffffff">Emma Watson</text>
+        <text x="68" y="46" font-family="sans-serif" font-size="11" fill="#e0f2fe">Sent an attachment...</text>
+        <text x="280" y="28" font-family="sans-serif" font-size="10" fill="#e0f2fe" text-anchor="end">10:42 AM</text>
+      </g>
+
+      <!-- Contact Item 2 -->
+      <g transform="translate(12, 210)">
+        <rect width="296" height="60" rx="10" fill="#1e293b" />
+        <circle cx="36" cy="30" r="18" fill="#64748b" />
+        <text x="36" y="35" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">J</text>
+        <circle cx="48" cy="42" r="4.5" fill="#10b981" stroke="#1e293b" stroke-width="2" />
+        <text x="68" y="26" font-family="sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Johnathan Doe</text>
+        <text x="68" y="43" font-family="sans-serif" font-size="11" fill="#64748b">Hey bro, check the new theme!</text>
+      </g>
+
+      <!-- Contact Item 3 -->
+      <g transform="translate(12, 280)">
+        <rect width="296" height="60" rx="10" fill="#1e293b" />
+        <circle cx="36" cy="30" r="18" fill="#475569" />
+        <text x="36" y="35" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">S</text>
+        <text x="68" y="26" font-family="sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Sarah Jenkins</text>
+        <text x="68" y="43" font-family="sans-serif" font-size="11" fill="#64748b">Offline</text>
+      </g>
+    </g>
+
+    <!-- RIGHT: Active Chat Conversation (w=760) -->
+    <g transform="translate(320, 0)">
+      <!-- Chat Header -->
+      <rect width="760" height="60" fill="#1e293b" />
+      <line x1="0" y1="60" x2="760" y2="60" stroke="#334155" stroke-width="1.5" />
+
+      <circle cx="45" cy="30" r="18" fill="#3b82f6" fill-opacity="0.3" stroke="#3b82f6" stroke-width="1" />
+      <text x="45" y="35" font-family="sans-serif" font-size="14" font-weight="bold" fill="#60a5fa" text-anchor="middle">E</text>
+      <circle cx="57" cy="42" r="4.5" fill="#10b981" stroke="#1e293b" stroke-width="2" />
+      <text x="75" y="27" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Emma Watson</text>
+      <text x="75" y="44" font-family="sans-serif" font-size="11" fill="#10b981">● Active Now</text>
+
+      <!-- Chat Messages Container -->
+      <!-- Message 1 (Incoming) -->
+      <g transform="translate(30, 90)">
+        <circle cx="16" cy="20" r="16" fill="#3b82f6" fill-opacity="0.3" />
+        <text x="16" y="25" font-family="sans-serif" font-size="12" font-weight="bold" fill="#60a5fa" text-anchor="middle">E</text>
+        <rect x="42" y="4" width="280" height="42" rx="14" fill="#334155" />
+        <text x="58" y="30" font-family="sans-serif" font-size="13" fill="#f8fafc">Hey Chirag! Did you update the chat?</text>
+        <text x="45" y="58" font-family="sans-serif" font-size="10" fill="#64748b">10:40 AM</text>
+      </g>
+
+      <!-- Message 2 (Outgoing) -->
+      <g transform="translate(360, 160)">
+        <rect x="0" y="4" width="340" height="42" rx="14" fill="#2563eb" />
+        <text x="18" y="30" font-family="sans-serif" font-size="13" fill="#ffffff">Yes! Full responsive revamp with 30+ themes.</text>
+        <circle cx="356" cy="20" r="16" fill="#3b82f6" />
+        <text x="356" y="25" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">C</text>
+        <text x="325" y="58" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="end">10:41 AM</text>
+      </g>
+
+      <!-- Message 3 (Incoming with Image attachment) -->
+      <g transform="translate(30, 235)">
+        <circle cx="16" cy="20" r="16" fill="#3b82f6" fill-opacity="0.3" />
+        <text x="16" y="25" font-family="sans-serif" font-size="12" font-weight="bold" fill="#60a5fa" text-anchor="middle">E</text>
+        <rect x="42" y="4" width="220" height="150" rx="14" fill="#334155" />
+        <!-- Mock image card inside bubble -->
+        <rect x="52" y="14" width="200" height="95" rx="8" fill="#1e293b" />
+        <text x="152" y="66" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">📷 Photo Attachment</text>
+        <text x="54" y="132" font-family="sans-serif" font-size="12" fill="#f8fafc">Check this out! Looks stunning.</text>
+        <text x="45" y="170" font-family="sans-serif" font-size="10" fill="#64748b">10:42 AM</text>
+      </g>
+
+      <!-- Message Input Bar -->
+      <g transform="translate(0, 430)">
+        <rect width="760" height="70" fill="#1e293b" />
+        <line x1="0" y1="0" x2="760" y2="0" stroke="#334155" stroke-width="1.5" />
+
+        <!-- Input Field Container -->
+        <rect x="25" y="14" width="630" height="42" rx="12" fill="#0f172a" stroke="#334155" />
+        <text x="45" y="40" font-family="sans-serif" font-size="13" fill="#64748b">Type a message...</text>
+        <text x="620" y="40" font-family="sans-serif" font-size="16" fill="#94a3b8">📎</text>
+
+        <!-- Send Button -->
+        <circle cx="705" cy="35" r="21" fill="#3b82f6" />
+        <polygon points="700,27 714,35 700,43 703,35" fill="#ffffff" />
+      </g>
+    </g>
+  </g>
+</svg>

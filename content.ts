@@ -18,6 +18,8 @@ type Project = {
   highlights: string[];
   stack: string[];
   repository: string;
+  liveUrl?: string;
+  icon?: string;
   cover?: { src: string; alt: string; theme: string; width: number; height: number };
 };
 
@@ -35,7 +37,8 @@ export const projects: Project[] = [
     ],
     stack: ["React", "Express", "MongoDB", "Socket.IO", "Zustand", "Cloudinary"],
     repository: "https://github.com/ExploreInsight/Chit-Chat",
-    cover: { src: "/projects/chit-chat.jpg", alt: "Chit Chat conversation and contacts interface", theme: "plum", width: 1234, height: 625 },
+    liveUrl: "https://chit-chat-tgog.onrender.com/",
+    cover: { src: "/projects/chit-chat.svg", alt: "Redesigned Chit Chat with contact search and a conversation", theme: "plum", width: 1200, height: 675 },
   },
   {
     slug: "supperfastshop",
@@ -50,6 +53,7 @@ export const projects: Project[] = [
     ],
     stack: ["React", "Vite", "Express", "MongoDB", "Stripe", "Zustand"],
     repository: "https://github.com/ExploreInsight/supperFastShop",
+    liveUrl: "https://supperfastshop.onrender.com/",
     cover: { src: "/projects/supperfastshop.svg", alt: "supperFastShop streetwear storefront preview", theme: "sand", width: 1200, height: 675 },
   },
   {
@@ -65,6 +69,7 @@ export const projects: Project[] = [
     ],
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Clerk", "UploadThing"],
     repository: "https://github.com/ExploreInsight/be2gether",
+    liveUrl: "https://be2gether.vercel.app/",
     cover: { src: "/projects/be2gether.png", alt: "be2gether desktop feed with posts and user profiles", theme: "mint", width: 1440, height: 900 },
   },
   {
@@ -80,7 +85,8 @@ export const projects: Project[] = [
     ],
     stack: ["React", "Express", "MongoDB", "TanStack Query", "Zod", "Cloudinary"],
     repository: "https://github.com/ExploreInsight/Media-Sphere",
-    cover: { src: "/projects/media-sphere.png", alt: "Media Sphere feed with navigation and posts", theme: "rose", width: 1366, height: 768 },
+    liveUrl: "https://media-sphere.onrender.com/",
+    cover: { src: "/projects/media-sphere.webp", alt: "Redesigned Media Sphere feed in the Mocha theme with sample posts", theme: "rose", width: 1280, height: 720 },
   },
   {
     slug: "chess",
@@ -123,6 +129,7 @@ export const projects: Project[] = [
     ],
     stack: ["Next.js", "Hono", "Gemini", "PostgreSQL", "Prisma", "Clerk"],
     repository: "https://github.com/ExploreInsight/AI-Notes",
+    liveUrl: "https://ainotes-rho.vercel.app/",
   },
   {
     slug: "ui-audit",
@@ -137,6 +144,7 @@ export const projects: Project[] = [
     ],
     stack: ["TypeScript", "React", "Plasmo", "Chrome Storage", "Tailwind CSS"],
     repository: "https://github.com/ExploreInsight/ui-scanner",
+    icon: "/projects/ui-audit.png",
   },
 ];
 
